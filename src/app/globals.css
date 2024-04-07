@@ -3,31 +3,140 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    height: 100%;
+    width: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.egg {
+    width: 350px;
+    height: 350px;
+}
+
+.str {
+    stroke: #7247cb;
+    stroke-width: 5px;
+}
+
+.str2 {
+    stroke: #7247cb;
+    stroke-width: 2px;
+}
+
+.c0 {
+    fill: #adc2ff;
+}
+
+.c1 {
+    fill: #caadff;
+}
+
+.c2 {
+    fill: #fbadff;
+}
+
+.c3 {
+    fill: #ffadd2;
+}
+
+.c4 {
+    fill: #ffbaad;
+}
+
+.c5 {
+    fill: #ffebad;
+}
+
+.c6 {
+    fill: #e2ffad;
+}
+
+.c7 {
+    fill: #b1ffad;
+}
+
+.c8 {
+    fill: #adffda;
+}
+
+.c9 {
+    fill: #adf3ff;
+}
+
+.c10 {
+    fill: #adc2ff;
+}
+
+.c11 {
+    fill: #caadff;
+}
+
+.bgdefault {
+    background-color: #fbdfff;
+}
+
+.bgimg1 {
+    background-image: url("https://i.imgur.com/BwKr0NZ.jpeg");
+}
+
+.bgimg2 {
+    background-image: url("https://i.imgur.com/jicwgbL.jpeg");
+}
+
+.bgimg3 {
+    background-image: url("https://i.imgur.com/VwSm698.jpeg");
+}
+
+.bgimg4 {
+    background-image: url("https://i.imgur.com/874iwlA.jpeg");
+}
+
+.bgimg5 {
+    background-image: url("https://i.imgur.com/Q6UKoab.jpeg");
+}
+
+.bgimg6 {
+    background-image: url("https://i.imgur.com/71Cs0x8.jpeg");
+}
+
+.bgimg7 {
+    background-image: url("https://i.imgur.com/LbJuLMj.jpeg");
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+button:disabled {
+    visibility: hidden;
 }
